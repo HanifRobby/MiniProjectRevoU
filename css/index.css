@@ -47,17 +47,127 @@ table {
 	border-spacing: 0;
 }
 
-body {
-    background-color: azure;
+body{
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
 }
-
 header {
     border-bottom: 1px solid black;
     width: 100%;
 }
 
-html {
+* {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h5{
+    font-size: 20px;
+}
+
+.bungkusan2{
+    margin-top: 20px;
+    text-align: center;
+    max-width: 60%;
+}
+
+.bungkusan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bungkusan3{
+    margin-bottom: 30px;
+}
+
+.garis{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: rgb(194, 194, 194);
+    height: 0.5px;
+}
+
+.baris{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: rgb(237, 240, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    font-size: 30px;
+    font-family: "Open Sans", serif;
+}
+
+.atasan{
+    display: flex;
+    align-items: center;
+}
+
+.ketua{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* .espigi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+.isi{
+    max-width: 60%;
+    width: 40%;
+}
+
+
+.orang{
+    width: 42px;
+    height: 42px;
+}
+
+.nama2{
+    font-weight: bold;
+    width: 100%;
+}
+
+.email2{
+    font-weight: bold;
+}
+
+.nama{
+    padding: 7px;
+    width: 88%;
+    border-color: #5b5b5b;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 10px;
+}
+
+.email{
+    padding: 7px;
+    width: 88%;
+    border-color: #5b5b5b;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 10px;
+}
+
+.contact-card{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .container {
@@ -65,6 +175,25 @@ html {
  width: 100%;
  margin: auto;
  display: block;
+}
+
+.teks{
+    font-family: "Open Sans", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.teks2{
+    color: #798da3;
+    font-size: 16px;
+    font-family: "Open Sans", serif;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .logo {
@@ -92,21 +221,12 @@ html {
 }
 
 .hero-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    row-gap: 40px;
-}
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    text-align: center;
 
-.hero-title > h1 {
-    font-size: 50px;
-    font-weight: 700;
-}
-
-.hero-title > h6 {
-    font-size: 20px;
 }
 
 .about {
@@ -123,9 +243,33 @@ html {
     justify-content: center;
 }
 
+.klik{      
+    border-radius: 3px;
+    color: #FFFF;
+    background-color: #232323;
+    width: 100%;
+    height: 42px;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    height: 40px;
+    padding: 0px 10px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    display: table-cell;
+    word-break: break-word;
+}
+
 .about-img {
-    height: 100%;
-    width: 400px;
+    height: 60%;
+    width: 500px;
 }
 
 .content-caption > p {
@@ -147,7 +291,9 @@ html {
 .person-info {
     display: flex;
     flex-direction: column;
+    
 }
+
 
 .person-info > p {
     color: gray;
@@ -156,16 +302,22 @@ html {
 }
 
 .contact {
-    background-color: lightgray;
-    width: 40%;
-    height: 700px;
+    background-color: rgb(237, 240, 244);
+    width: 20%;
+    height: 600px;
     padding: 20px;
-
+    font-family: "Open Sans", serif;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .opsi {
-    width: 176px;
-    text-align: left;
+    width: 100%;
+    height: 30px;
+    border-color: #5b5b5b;
+    border-radius: 5px;
+    border-width: 1px;
+    
 }
 
 .border {
@@ -173,6 +325,7 @@ html {
 }
 
 .information-title {
+    max-width: 80%;
     font-size: 16px;
     color: gray;
     margin-bottom: 20px;
@@ -182,6 +335,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 .information-list > li {
@@ -200,6 +354,10 @@ html {
     align-items: center;
     border-radius: 50%;
     font-size: 24px;
+}
+
+.list-paragraph{
+    max-width: 60%;
 }
 
 .card {
@@ -225,4 +383,81 @@ form {
 .input {
     display: flex;
     flex-direction: column;
+}
+
+.tombol{
+    background-color: #232323;
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 206px;
+    height: 42px;
+    padding: 0px 10px;
+    min-width: 1px;
+    min-height: 1px;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    display: table-cell;
+    word-break: break-word;
+    margin-bottom: 40px;
+    margin-top: 35px;
+}
+
+.tetew{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ob{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gtw{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 50px; /*nyesuain pinggiran*/
+}
+
+.l12{
+    display: flex;
+    gap: 12px;
+    max-width: 25%;
+}
+
+.icon{
+    width: 42px;
+    height: 42px;
+    aspect-ratio: 1;
+    background-color: rgb(237, 240, 244);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+}
+
+.icon > img {
+    width: 70%;
+}
+
+.esvigi{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
