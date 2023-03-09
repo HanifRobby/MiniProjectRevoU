@@ -420,3 +420,9 @@ form {
     flex-direction: column;
     gap: 50px;
 }
+
+.error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
