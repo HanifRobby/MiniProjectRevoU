@@ -1,52 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 body{
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
@@ -74,7 +25,8 @@ h5{
 .bungkusan2{
     margin-top: 20px;
     text-align: center;
-    max-width: 60%;
+    max-width: 30%;
+    color: gray;
 }
 
 .bungkusan{
@@ -84,6 +36,7 @@ h5{
 }
 
 .bungkusan3{
+    color: black;
     margin-bottom: 30px;
 }
 
@@ -240,10 +193,10 @@ h5{
 .about-contact {
     display: flex;
     gap: 40px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.klik{      
+.klik{     
     border-radius: 3px;
     color: #FFFF;
     background-color: #232323;
@@ -268,8 +221,8 @@ h5{
 }
 
 .about-img {
-    height: 60%;
-    width: 500px;
+    height: 100%;
+    width: 100%;
 }
 
 .content-caption > p {
@@ -345,8 +298,8 @@ h5{
 }
 
 .list-number {
-    background-color: gray;
-    color: white;
+    background-color: lightgray;
+    color: gray;
     height: 50px;
     width: 50px;
     display: flex;
@@ -408,9 +361,11 @@ form {
     word-break: break-word;
     margin-bottom: 40px;
     margin-top: 35px;
+    border-radius: 4px;
 }
 
-.tetew{
+.footer{
+    color: gray;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -423,16 +378,19 @@ form {
     text-align: center;
 }
 
-.gtw{
+.package{
     display: flex;
-    justify-content: space-evenly;
-    padding-left: 50px; /*nyesuain pinggiran*/
+    justify-content: center;
+    padding-left: 23%;
+    width: 60%;
+
 }
 
 .l12{
     display: flex;
     gap: 12px;
     max-width: 25%;
+    padding: 20px;
 }
 
 .icon{
@@ -458,6 +416,7 @@ form {
 
 .wrapper{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 50px;
 }
